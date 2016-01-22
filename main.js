@@ -1,5 +1,5 @@
 /*
-Scenario: we want to assign to the browser's cookies the values selected by the
+Scenario: we want to assign some values to the browser's cookies.
 Deal: if the value passed by the user isn't already a cookie value, we add it to cookies. Otherwise, remove.
 */
 var cookies = {
