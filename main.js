@@ -27,7 +27,7 @@ var cookies = {
     // we update cookies to include this new value.
     if (this.search() !== -1) {
       this.remove();
-    } else { // Else, we remove it from cookies.
+    } else { // Else, we remove it from cookies
       this.cookieState.push(this.selected);
     };
     // and update to the browser.
@@ -59,5 +59,10 @@ var cookies = {
     if(i != -1) {
 	    this.cookieState.splice(i, 1);
     }
+  },
+
+  log: function() {
+    this.get();
+    document.getElementById('log').innerHTML = this.cookieState;
   },
 }

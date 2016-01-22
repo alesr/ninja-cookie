@@ -6,13 +6,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="main.js"></script>
   </head>
-  <body>
+  <body onload="cookies.log();">
     <br>
     <br>
-    <a href="#" onclick="cookies.ninja('Fuma Kotaro')">Fuma Kotaro</a>
-    <a href="#" onclick="cookies.ninja('Kato Danzo')">Kato Danzo</a>
-    <a href="#" onclick="cookies.ninja('Hattori Hanzo')">Hattori Hanzo</a>
+    <a href="#" onclick="cookies.ninja('Fuma Kotaro');">Fuma Kotaro</a>
+    <a href="#" onclick="cookies.ninja('Kato Danzo');">Kato Danzo</a>
+    <a href="#" onclick="cookies.ninja('Hattori Hanzo');">Hattori Hanzo</a>
     <br>
-    <p></p>
+    <p>Say my ninja: <span id='log'></span></p>
   </body>
 </html>
